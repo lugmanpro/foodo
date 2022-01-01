@@ -1,16 +1,18 @@
-# foodtoday
+# Foodo or Food Options
 
-cs50 foodtoday
+CS50  2021 project app
 
-## Getting Started
+## Developer
+Lugman Almugrabi
+## Video Demo: 
+https://youtu.be/248B1g9IR98
 
-This project is a starting point for a Flutter application.
+## Description:
 
-A few resources to get you started if this is your first Flutter project:
+Foodo app is to help someone who can cook and hard to decide
+what to cook by let this app to pick randomly from list
+of food depend if the user is add or not.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features:
+- Data saved localy (no internet access)
+- user able to add and delete food 
