@@ -77,6 +77,11 @@ class HomeScreen extends StatelessWidget {
                                   MaterialPageRoute(
                                       builder: (context) => AnswerScreen(
                                           selectedFood: randomPick)));
+                            } else {
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(SnackBar(
+                                content: Text("You should add food first"),
+                              ));
                             }
                           }),
                       SizedBox(
