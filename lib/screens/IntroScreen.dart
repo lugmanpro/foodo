@@ -59,7 +59,7 @@ class IntroScreen extends StatelessWidget {
                             "Foodo",
                             style: TextStyle(color: cOrangeRed),
                           ),
-                          Text(" is offline app to help to pick cooking"),
+                          Text(" is offline app to help to pick cook decision"),
                         ],
                       ),
                       Text("depend on your list"),
