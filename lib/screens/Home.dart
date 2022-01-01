@@ -104,11 +104,18 @@ class HomeScreen extends StatelessWidget {
                           primary: false,
                           itemCount: foodData.length,
                           itemBuilder: (context, index) {
-                            return FoodListItem(
-                              title: foodData[index].name,
-                              image: foodData[index].image,
-                              category: foodData[index].category,
-                              color: Color.fromRGBO(208, 134, 89, 1),
+                            return InkWell(
+                              onLongPress: () {
+                                Provider.of<FoodProvider>(context,
+                                        listen: false)
+                                    .deleteFood(foodData[index]);
+                              },
+                              child: FoodListItem(
+                                title: foodData[index].name,
+                                image: foodData[index].image,
+                                category: foodData[index].category,
+                                color: Color.fromRGBO(208, 134, 89, 1),
+                              ),
                             );
                           })
                       : Center(child: Text('You did not add yet')),
